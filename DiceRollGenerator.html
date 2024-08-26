@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>
+      Dice Roll Generator
+  </title>
+
+  <link rel="stylesheet" href="DiceRollerStyle.css">
+
+</head>
+
+<body>
+
+<h1>Dice Roll Generator</h1>
+
+<h3>Select a dice from the list below to obtain a corresponding random roll</h3>
+
+<div id="result" class="result"  style="display: none;"></div>
+
+<ol>
+  <li> <input type="checkbox" id="d4"> d4</li>
+  <li> <input type="checkbox" id="d6"> d6</li>
+  <li> <input type="checkbox" id="d8"> d8</li>
+  <li> <input type="checkbox" id="d10"> d10</li>
+  <li> <input type="checkbox" id="d12"> d12</li>
+  <li> <input type="checkbox" id="d20"> d20</li>
+  <li> <input type="checkbox" id="d100"> d100</li>
+</ol><br>
+  
+<button type="button" class = "button" id="submit" onClick=recieveRoll()>Receive Random Roll</button>
+<button type="button" class = "button" id="submit" onClick=clearPage()>Refresh Screen</button>
+
+<script>
+
+  function recieveRoll(){
+    alert(
+      "This input is invalid. Try again"
+    )
+  }
+
+  function clearPage(){
+    //makes it so that the checkboxes being checked is made false
+    const questions = document.querySelectorAll('input[type = "checkbox"]')
+    questions.forEach((question) => {
+        question.checked = false;
+
+    });
+    
+    //clears the screen of checked checkboxes and score
+    const resultDiv = document.getElementById('result');
+    resultDiv.style.display = 'none'; 
+  }
+
+</script>
+
+  </body>
+</html>
