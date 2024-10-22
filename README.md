@@ -28,4 +28,5 @@ def collectData(samples)
 
   return the values of AveX, AveY, and AveZ
 
-call the function collectData()
+samples = interger value
+call the function collectData(samples)
