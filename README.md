@@ -12,7 +12,7 @@ def collectData(samples)
   for i in range of samples
     sampX.append(accelX)
 
-  accelY = collection of data in x-direction
+  accelY = collection of data in y-direction
 
   for i in range of samples
     sampY.append(accelY)
