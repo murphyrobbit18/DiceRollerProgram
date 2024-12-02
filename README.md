@@ -1,5 +1,5 @@
 ## guiGame() Function Pseudocode
-
+```markdown
 score = 0
 humList = []
 compList = []
