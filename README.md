@@ -40,6 +40,6 @@ func guiGame()
         put yellow on the new list
 
     if clicked and humList and compList are the same
-      score += 1
+        score += 1
     else
-      game over screen
+        game over screen
